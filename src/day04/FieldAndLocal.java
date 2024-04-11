@@ -1,6 +1,6 @@
 package day04;
 
-public class FildAndLocal {
+public class FieldAndLocal {
     //힙 공간에 살고 있는 aaa
     // 필드는 값을 초기화 하지 않아도
     // 각 타입의 기본값으로 자동 세팅
