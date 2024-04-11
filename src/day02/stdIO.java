@@ -8,7 +8,7 @@ public class stdIO {
     public static void main(String[] args) throws IOException {
         String name = "김철수";
 
-        //%s : 믄지얄 포맷팅
+        //%s : 문자열 포맷팅
         //%d : 정수
         //%f : 실수
         //%c : 단일 문자
