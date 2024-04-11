@@ -26,7 +26,7 @@ public class StringCompare {
 
         Dog e = new Dog();
         Dog f = new Dog();
-        System.out.println(e==f); //주소 비교(객체)
+        System.out.println(e==f); //주소 비교(객체) false
 
     }
 }
