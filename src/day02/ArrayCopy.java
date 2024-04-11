@@ -14,7 +14,7 @@ public class ArrayCopy {
         System.out.println("petsCopy = " + petsCopy);
         
         pets[1]="냥냥";
-        //원본을 수정했는데, 사본이 수정됨!
+        //원본을 수정했는데, 사본도 수정됨!
         System.out.println("Arrays.toString(petsCopy) = " + Arrays.toString(petsCopy));
         //⭐제대로된 배열 복사 방법
         String[] petsCopy2 = new String[pets.length];

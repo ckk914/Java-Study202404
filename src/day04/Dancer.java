@@ -4,7 +4,7 @@ package day04;
 public class Dancer {
 
     //클래스는 객체의 속성과 기능을 정의
-//라이브러리 클래스 : 설계도 역할만 함
+    //라이브러리 클래스 : 설계도 역할만 함
     //실행은 안함.
     //main이 없음.
     //여기서는 정의만 한다!
@@ -30,11 +30,11 @@ public class Dancer {
     }
 
     void dance() {
-        System.out.println(dancerName + "댄서가" + genre + "춤을 춥니다");
+        System.out.println(dancerName + " 댄서가 " + genre + " 춤을 춥니다");
     }
 
     //생성자(constructor)
-    //객체가 생성될 때 초기 값을  세팅해주는 함수의 일종
+    //객체가 생성될 때 초기 값을 세팅해주는 함수의 일종
     //생성자는 함수의 일종인데,
     //  반드시 이름이 클래스 이름과 같아야함
     //  대소문자까지 같아야함
