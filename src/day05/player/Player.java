@@ -44,6 +44,7 @@ public class Player {
 
     //메서드
     // Player this는 늘 생략되어있다.!!
+    // 여기서도 생략 가능함 ! 안써줘도 자동으로 this가 있다고 생각하면 됨
     void attack(Player this,Player target){
         System.out.println("this = " + this);
         System.out.println("target = " + target);
