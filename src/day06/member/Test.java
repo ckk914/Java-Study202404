@@ -21,5 +21,11 @@ public class Test {
         for(Member m:members){
             System.out.println( m);
         }
+        System.out.println("================");
+        MemberRepository mr = new MemberRepository();
+        MemberView mv = new MemberView();
+        Member add1 = new Member("ddd@ddd.com","4321","칼","남자",34);
+        mr.addNewMember(add1);
+        mv.showMembers();
     }
 }
