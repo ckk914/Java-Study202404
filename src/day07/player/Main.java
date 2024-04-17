@@ -16,7 +16,7 @@ public class Main {
         Hunter h= new Hunter("스티븐호킹");
 
         w.showStatus();
-        w.exp = 10;
+
         m.showStatus();
         h.showStatus();
 

@@ -4,8 +4,15 @@ package day07.player;
 public class Hunter extends Player {
 
 
-    int mana;
     int concentration; // 집중력
+
+    @Override
+    public void showStatus(){
+        //super: 부모로 접근(기존꺼 사용)⭐
+        //오버라이딩임..!
+        super.showStatus();
+        System.out.println("concentration = " + concentration);
+    }
 
     public Hunter(String nickname) {
         this.nickName = nickname;

@@ -10,7 +10,12 @@ public class Mage extends Player{
         this.hp =  50;
         this.mana = 100;
     }
-
+    public void showStatus(){
+        //super: 부모로 접근(기존꺼 사용)⭐
+        //오버라이딩임..!
+        super.showStatus();
+        System.out.println("mana = " + mana);
+    }
 
     public void thunderbolt(Mage targets) {
         System.out.println("썬더볼트");
