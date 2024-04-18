@@ -2,7 +2,7 @@ package day06try2;
 
 public class MemberList {
     Member[] mArr;
-
+    private static final int NOT_FOUND = -1;
     MemberList() {
         this.mArr = new Member[0];
     }
@@ -23,7 +23,7 @@ public class MemberList {
                 return i;
             }
         }
-        return -1;
+        return NOT_FOUND;   //-1
     }
     // 한 명의 회원 정보 얻기
     Member get(String email) {
