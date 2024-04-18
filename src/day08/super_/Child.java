@@ -7,7 +7,7 @@ public class Child extends Parent{
 
     Child(){
 //        super();  기본으로 있음. 생략되어 있는 상태임!
-        this(100); //첫줄에 this가 있으면 super를 생성 안함
+        this(100); //첫줄에 this가 있으면 super를 생성 안함 : this : 자신의 다른 생성자로 가쟈⭐️
         System.out.println("Child 클래스의 생성자 호출!");
         this.c= true;
     }
