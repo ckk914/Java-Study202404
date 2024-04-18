@@ -6,9 +6,10 @@ public class Warrior extends Player {
     int rage; //분노게이지
 
     public Warrior(String nickName) {
-        this.nickName = nickName;
-        this.level = 1;
-        this.hp =  50;
+        super(nickName); //부모의 빈 생성자를 호출한다.
+//        this.nickName = nickName;
+//        this.level = 1;
+//        this.hp =  50;
         this.rage = 100;
     }
 

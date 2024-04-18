@@ -15,9 +15,10 @@ public class Hunter extends Player {
     }
 
     public Hunter(String nickname) {
-        this.nickName = nickname;
-        this.level = 1;
-        this.hp = 50;
+        super(nickname);
+//        this.nickName = nickname;
+//        this.level = 1;
+//        this.hp = 50;
         this.concentration = 10;
     }
 
