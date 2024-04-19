@@ -26,6 +26,29 @@ public class Main {
         Driver driver = new Driver();
         driver.drive(new Mustang());
 
+        Sonata mySonata = new Sonata();
+        mySonata.accelerate();
+        mySonata.joinSonataClub();
+
+        Car[] cars = new Car[3];
+        cars[0] = mySonata;
+        System.out.println("===================");
+        CarShop shop = new CarShop();
+
+        double x = 10;
+        int y = (int)x; //다운 캐스팅
+
+        // 객체 타입에서 다운캐스팅의 전제조건: 반드시 상속 관계가 있어야 하며
+        // 자식 객체가 부모 타입으로 업 캐스팅 된 것만 내릴 수 있음.
+        // 즉, 부모객체를 자식타입으로 내릴 수는 없다.! ⭐️
+        Car car = shop.exoprtCar(3000);
+        car.accelerate();
+
+//        Mustang mmm = (Sonata)new Mustang();  //형제도 캐스팅 안됨..
+        Car ttt = new Tucson();
+        Tucson tt2 = (Tucson) ttt;  //⭐️Car로 올라간 투싼을 다시 투싼으로 맞춘다~!
+
+
 //        Sonata[] sArr = {sonata1,sonata2,sonata3};
 //        for(Sonata sonata:sArr){
 //            sonata.accelerate();
