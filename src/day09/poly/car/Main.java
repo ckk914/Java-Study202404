@@ -48,6 +48,8 @@ public class Main {
         Car ttt = new Tucson();
         Tucson tt2 = (Tucson) ttt;  //⭐️Car로 올라간 투싼을 다시 투싼으로 맞춘다~!
 
+        System.out.println("=====");
+        driver.drive(new Tucson());
 
 //        Sonata[] sArr = {sonata1,sonata2,sonata3};
 //        for(Sonata sonata:sArr){
