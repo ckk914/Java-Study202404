@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eef83e03-c3db-42b0-8dd1-4ae40d87d7d6" name="Changes" comment="싱글톤 &#10;객체 추가 생성 막음">
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="eef83e03-c3db-42b0-8dd1-4ae40d87d7d6" name="Changes" comment="도서 시스템 업데이트&#10;-대여,검색 등 기능 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day08/super_/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/super_/Child.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,10 +61,11 @@
     "project.structure.last.edited": "SDK",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.콘솔 글꼴",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
     "애플리케이션.DataType.executor": "Run",
     "애플리케이션.Main.executor": "Run",
     "애플리케이션.Recursive.executor": "Run",
+    "애플리케이션.Run.executor": "Run",
     "애플리케이션.TypeCasting.executor": "Run",
     "애플리케이션.Variable.executor": "Run",
     "애플리케이션.day07.player.Main.executor": "Run",
@@ -75,7 +73,10 @@
     "애플리케이션.day08.static_.Main.executor": "Run",
     "애플리케이션.day08.static_2.Main.executor": "Run",
     "애플리케이션.day08.static_3.Main.executor": "Run",
-    "애플리케이션.day08.super_.Main.executor": "Run"
+    "애플리케이션.day08.super_.Main.executor": "Run",
+    "애플리케이션.day09.casting.Main.executor": "Run",
+    "애플리케이션.day09.poly.car.Main.executor": "Run",
+    "애플리케이션.day09.poly.computer2.Main.executor": "Run"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -84,13 +85,13 @@
       <recent name="$PROJECT_DIR$/src/day08/static_2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.day08.enum_2.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day08.singleton.Main" />
+  <component name="RunManager" selected="애플리케이션.Run">
+    <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day09.book.Run" />
       <module name="Java-Study202404" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day08.singleton.*" />
+          <option name="PATTERN" value="day09.book.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="day08.enum_2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day08.enum_2.Main" />
+    <configuration name="day07.player.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day07.player.Main" />
       <module name="Java-Study202404" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day08.enum_2.*" />
+          <option name="PATTERN" value="day07.player.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="day08.enum_.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day08.enum_.Main" />
+    <configuration name="day09.casting.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day09.casting.Main" />
       <module name="Java-Study202404" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day08.enum_.*" />
+          <option name="PATTERN" value="day09.casting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,12 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="day08.final_2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day08.final_2.Main" />
+    <configuration name="day09.poly.car.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day09.poly.car.Main" />
       <module name="Java-Study202404" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day08.final_2.*" />
+          <option name="PATTERN" value="day09.poly.car.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="day08.static_3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day08.static_3.Main" />
+    <configuration name="day09.poly.computer2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day09.poly.computer2.Main" />
       <module name="Java-Study202404" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day08.static_3.*" />
+          <option name="PATTERN" value="day09.poly.computer2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,9 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.day08.enum_2.Main" />
-        <item itemvalue="Application.day08.enum_.Main" />
-        <item itemvalue="Application.day08.final_2.Main" />
+        <item itemvalue="애플리케이션.Run" />
+        <item itemvalue="애플리케이션.day09.poly.car.Main" />
+        <item itemvalue="애플리케이션.day09.poly.computer2.Main" />
+        <item itemvalue="애플리케이션.day07.player.Main" />
+        <item itemvalue="애플리케이션.day09.casting.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +338,63 @@
       <option name="project" value="LOCAL" />
       <updated>1713429328684</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="주석 수정">
+      <option name="closed" value="true" />
+      <created>1713429745947</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1713429745947</updated>
+    </task>
+    <task id="LOCAL-00023" summary="etc">
+      <option name="closed" value="true" />
+      <created>1713429793076</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1713429793076</updated>
+    </task>
+    <task id="LOCAL-00024" summary="다형성 테스트 및 정리 &#10;내용 업데이트">
+      <option name="closed" value="true" />
+      <created>1713488400266</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1713488400266</updated>
+    </task>
+    <task id="LOCAL-00025" summary="다형성 테스트 및 정리">
+      <option name="closed" value="true" />
+      <created>1713494901035</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1713494901035</updated>
+    </task>
+    <task id="LOCAL-00026" summary="다형성 테스트 및 정리">
+      <option name="closed" value="true" />
+      <created>1713494924283</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1713494924283</updated>
+    </task>
+    <task id="LOCAL-00027" summary="instanceof 추가">
+      <option name="closed" value="true" />
+      <created>1713503731800</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1713503731800</updated>
+    </task>
+    <task id="LOCAL-00028" summary="도서 시스템 업데이트&#10;-대여,검색 등 기능 추가">
+      <option name="closed" value="true" />
+      <created>1713516058456</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1713516058456</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -381,7 +440,13 @@
     <MESSAGE value="static 테스트" />
     <MESSAGE value="회원정보시스템 final 처리" />
     <MESSAGE value="싱글톤 &#10;객체 추가 생성 막음" />
-    <option name="LAST_COMMIT_MESSAGE" value="싱글톤 &#10;객체 추가 생성 막음" />
+    <MESSAGE value="주석 수정" />
+    <MESSAGE value="etc" />
+    <MESSAGE value="다형성 테스트 및 정리 &#10;내용 업데이트" />
+    <MESSAGE value="다형성 테스트 및 정리" />
+    <MESSAGE value="instanceof 추가" />
+    <MESSAGE value="도서 시스템 업데이트&#10;-대여,검색 등 기능 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="도서 시스템 업데이트&#10;-대여,검색 등 기능 추가" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
