@@ -52,7 +52,9 @@ public class LibraryRepository {
         for(Book book: bookList.getbArr()){
             if(book.getTitle().contains(keyword)){
                 filteredList.push(book);
+
             }
+
         }
         return filteredList.getbArr();
     }

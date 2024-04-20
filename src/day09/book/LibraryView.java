@@ -112,7 +112,9 @@ public class LibraryView {
         Book[] searchBook = repository.searchBookList(SearchStr);
 
         if(searchBook.length >0){
-//            for()
+         for (Book s : searchBook) {
+             System.out.println(s.info());
+         }
         }else{
             System.out.println("검색 결과가 없습니다.");
         }
