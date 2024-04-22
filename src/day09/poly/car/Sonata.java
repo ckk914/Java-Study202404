@@ -1,6 +1,6 @@
 package day09.poly.car;
 
-public class Sonata extends Car{
+public class Sonata implements Car{
 
 
     public void accelerate(){
@@ -9,6 +9,18 @@ public class Sonata extends Car{
 
     //소나타 동호회에 가입하는 기능
     public void joinSonataClub(){
+
+    }
+
+
+
+    @Override
+    public void brake() {
+
+    }
+
+    @Override
+    public void changeGear() {
 
     }
 }

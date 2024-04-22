@@ -56,7 +56,8 @@ public class Main {
 //            sonata.accelerate();
 //        }
 //        Tucson[] tArr = {tucson1,tucson2};
-
+Tucson tucson=new Tucson();
+tucson.accelerate();
 
     }
 }
