@@ -16,12 +16,16 @@ public class TryExample2 {
          */
         try {
             System.out.println("정수1: ");
-            int n1 = Integer.parseInt(sc.next());   //에러 잘 나는 구간 : NumberFormatException 숫자 포멧 문제
+            //에러 잘 나는 구간 : NumberFormatException 숫자 포멧 문제
+            int n1 = Integer.parseInt(sc.next());
+
 
             System.out.println("정수2: ");
-            int n2 = sc.nextInt();                  // InputMisMatchException 정수 아닌 경우
+            // InputMisMatchException 정수 아닌 경우
+            int n2 = sc.nextInt();
 
-            int result = n1/ n2;                    //ArithmeticException  0 나누기 에러
+            //ArithmeticException  0 나누기 에러
+            int result = n1/ n2;
             System.out.println("result = " + result);
 
             String s= null;
