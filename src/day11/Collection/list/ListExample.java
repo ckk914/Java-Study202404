@@ -1,4 +1,4 @@
-package day11.Collection.lost;
+package day11.Collection.list;
 import java.util.Comparator;
 import java.util.List;
 import java.util.ArrayList;
