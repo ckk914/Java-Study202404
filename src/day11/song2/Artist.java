@@ -1,9 +1,10 @@
 package day11.song2;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Artist {
+public class Artist implements Serializable {
     private String artistName; //가수명
     private Set<String> songList; //노래목록 , 중복 허용 안함 ,순서 상관없음!
                                   //순서 중요하면 List 쓰시오
