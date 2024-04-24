@@ -6,6 +6,7 @@ public class Menu {
     public static final List<Dish> menuList;
 
     static {
+        //데이터 추가
         menuList = List.of(
                 new Dish("pork", false, 800, Dish.Type.MEAT),
                 new Dish("beef", false, 700, Dish.Type.MEAT),

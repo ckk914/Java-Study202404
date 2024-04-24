@@ -36,6 +36,7 @@ public class FileReaderExample {
 //            int read = fr.read();
 //            System.out.println("(char)read = " + (char)read);
                 //파일 생성 명령
+                //읽은 것을 콤마로 구분하여 분리하여 배열로 만든다
                 String[] split = s.split(",");
 //                System.out.println(Arrays.toString(split));
 

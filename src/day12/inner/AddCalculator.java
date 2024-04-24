@@ -1,5 +1,5 @@
 package day12.inner;
-
+//Calculator 상속 받아옴
 public class AddCalculator implements Calculator {
 
     @Override

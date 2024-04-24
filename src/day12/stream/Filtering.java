@@ -13,7 +13,11 @@ public class Filtering {
         // 요리 메뉴 중
         // 채식주의자가 먹을 수 있는
         // 요리만 필터링
+
         // 자바에서는 리스트.스트림.필터 로 필터 접근
+
+        // 리스트 생성 / 필러팅 진행~!
+
         List<Dish> dishList = Menu.menuList
                 .stream().
                 filter(dish -> dish.isVegeterian())
@@ -23,7 +27,7 @@ public class Filtering {
             System.out.println(dish.getName());
         });
         System.out.println("==================");
-        //메뉴 목록 중에 육류이면서 600 칼로리 미만인 요리 필터링해서 출력
+        //메뉴 목록 중에 육류이면서 / 600 칼로리 미만인 요리 필터링해서 출력
         Menu.menuList
                 .stream().
                 filter(dish -> dish.getType() == Dish.Type.MEAT
@@ -70,7 +74,8 @@ public class Filtering {
         List<Integer> numbers = List.of(1, 2, 1, 3, 3, 2, 4, 4, 5, 6);
         //리스트에서 짝수만 필터링
         // distinct :   .distinct()  // 중복 제거  ⭐️
-        List<Integer> integersList = numbers.stream()
+        List<Integer> integersList =
+                numbers.stream()
                 .filter(n -> n % 2 == 0)
                 .distinct() // 중복 제거
                 .collect(toList());

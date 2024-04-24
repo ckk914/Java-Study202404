@@ -18,6 +18,9 @@ public class FileOutputExample {
         //⭐️try with resource
         // : close가 필요한 하드웨어 접근 코드에 의해
         //   메모리 자원 반납처리를 자동화 해주는 문법
+        //   ㄴ try(FileOutputStream fos =new FileOutputStream(FileExample.ROOT_PATH + "/hello/Pet.txt"); ) {
+        //   ㄴ try 문 안에다가 선언하기!! ⭐️
+
         //FileOutputStream fos = null;
 
             try(FileOutputStream fos =new FileOutputStream(FileExample.ROOT_PATH + "/hello/Pet.txt"); ) {
@@ -41,6 +44,7 @@ public class FileOutputExample {
 //                //다음 실행에 문제가 생길 여지가 줄어듬
 //                //필수 코드! ⭐️
 //                //다 썼으면 해제해랏 ⭐️
+                  // try with resource 로 선언했으면 close 안해도 됨 ⭐️
 //                try {
 //                   if(fos != null) fos.close();
 //                } catch (IOException e) {

@@ -5,7 +5,7 @@ import java.util.Objects;
 public class SimpleDish {
     private final String name;
     private final int calories;
-
+    //⭐️ Dish 에서 속성 줄여서 받기 위해 생성된 클래스
     public SimpleDish(String name, int calories) {
         this.name = name;
         this.calories = calories;

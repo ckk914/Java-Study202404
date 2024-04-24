@@ -1,7 +1,7 @@
 package day08.protec.pac2;
 
 import day08.protec.pac1.A;
-
+//A를 상속
 public class D extends A {
 
     D(){

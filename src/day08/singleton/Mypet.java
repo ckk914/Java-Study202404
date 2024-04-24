@@ -14,7 +14,7 @@ public class Mypet{
 
     //3, 공개된 메서드를 통해 미리 만들어둔 단 하나의 객체를 제공
     public static Mypet getInstance(){
-
+        //객체 반환
         return obj;
     }
     void introduce(){
@@ -24,5 +24,9 @@ public class Mypet{
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 }
