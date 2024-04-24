@@ -1,5 +1,11 @@
 package day06try2;
 
+import day12.io.FileExample;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Arrays;
 
 public class MemberRepository {
@@ -29,9 +35,58 @@ public class MemberRepository {
 
         // 배열에 데이터를 추가하는 로직
         members.push(newMember);
+
+//        회원 정보 텍스트 파일로 저장
+        try (FileWriter fw = new FileWriter(FileExample.ROOT_PATH + "/hello/member.txt",true)) {
+            String newMemberInfo = String.format("%s,%s,%s,%s,%d\n",
+                    newMember.email, newMember.memberName,
+                    newMember.password, newMember.gender,
+                    newMember.age);
+            fw.write(newMemberInfo);
+
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
     }
 
-    /**
+    // 회원 정보 세이브파일 불러오기
+    public void loadFile() {
+        String targetPath = FileExample.ROOT_PATH + "/hello/member.txt";
+
+        try (FileReader fr = new FileReader(targetPath)) {
+
+            // 보조 스트림 활용
+            // 텍스트를 라인단위로 읽어들이는 보조스트림
+            BufferedReader br = new BufferedReader(fr);
+
+            while (true) {
+                String s = br.readLine();
+//                System.out.println("s = " + s);
+
+                if (s == null) break;
+
+                String[] split = s.split(",");
+//                System.out.println(Arrays.toString(split));
+
+                // 읽어들인 회원정보로 회원 객체 생성
+                Member member = new Member(
+                        split[0],
+                        split[2],
+                        split[1],
+                        split[3],
+                        Integer.parseInt(split[4])
+                );
+                //읽은 파일을 멤버 데이터에 추가해준다.
+                this.members.push(member);
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+        /**
      * 이메일 중복을 확인하는 기능
      * @param targetEmail - 검사할 사용자의 입력 이메일 값
      * @return - 이메일이 이미 존재한다면 true,
