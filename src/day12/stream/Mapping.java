@@ -81,9 +81,12 @@ public class Mapping {
         List<SimpleDish> simpleDishList =
                 menuList
                         .stream()
-                        .map(dish -> new SimpleDish(dish))
+//                        .map(dish -> new SimpleDish(dish))
+                        .map(SimpleDish::new)
                         .collect(Collectors.toList());
-        simpleDishList.forEach(sd -> System.out.println(sd));
+//        simpleDishList.forEach(sd -> System.out.println(sd));
+        simpleDishList.forEach(System.out::println);
+        //⭐️ 노란 밑줄 생기면 alt_ enter 누르면 람다로 바꿔준다~!
 
         /*
             메뉴 목록에서 칼로리가 500칼로리보다 큰
