@@ -11,11 +11,12 @@ public class SetExample {
         //비교적 빠른 저장 속도
         Set<Object> set = new HashSet<>();
         
-        boolean flag1 = set.add("김말이");  //true
+        boolean flag1 = set.add("김말이");  //데이터 저장되면 true
         set.add("김밥");
         set.add("라면");
         set.add("단무지");
-        boolean flag2 = set.add("김말이");    //중복 허용 안함 false
+        boolean flag2 = set.add("김말이");    //중복 허용 안함
+                                             //데이터 저장 안되어 false
 
         System.out.println("set = " + set);
         System.out.println("flag1 = " + flag1);
@@ -35,11 +36,11 @@ public class SetExample {
         //set은 보통 데이터 중복을 빠르게 제거할때 사용⭐️
         List<Integer> nubers = List.of(3,3,1,1,1,3,3,5,5,5,6,6,7,7,9);
 
-        //set으로 변환
+        //List -> set으로 변환
         Set<Integer> numberSet = new HashSet<>(nubers);
         System.out.println("numberSet = " + numberSet);
 
-        //list 로 다시 변환
+        //set -> list 로 다시 변환
         nubers = new ArrayList<>(numberSet);
         System.out.println("nubers = " + nubers);
 
