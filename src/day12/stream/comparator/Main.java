@@ -21,16 +21,17 @@ public class Main {
         //나이 순으로 오름차 정렬(나이 적은순으로 앞에)
         //Comparator -> 인터페이스임
         //낮은 것 부터 정렬한다~!
-        // 1번빼기 2번 뺴기 = 오름차
+        //==============================
+        // 1번빼기 2번 뺴기 = 오름차   => (o1, o2) ->o1.getAge() - o2.getAge()
         //반대로 하면 내림차순 됨..ㄱ
-        // 2번빼기 1번 하면 내림차
+        // 2번빼기 1번 하면 내림차     => (o1, o2) ->o2.getAge() - o1.getAge()
+        //==============================
         studentList.sort((o1, o2) ->o1.getAge() - o2.getAge());
         System.out.println("studentList = " + studentList);
         //성적 순으로 내림차 정렬(성적 우수 순)
         //오름차순임
         studentList.sort(comparing(s->s.getScore()));
         //내림차순
-
 //        studentList.sort(comparing(s-> s.getScore()).reversed());
         // 성적 순으로 내림차 정렬 (성적 높은 순)
         //s 에 이번엔 형을 명시해야함~! Student s 로 ⭐️
